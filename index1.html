@@ -1,0 +1,67 @@
+<DOCTYPE html>
+Html lang="en"
+   Head
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-compatible"content="IE=edge">
+      <meta name="viewport"content="width=device-width,initial-scale=1">
+      <title> TO DO List</title>
+      <style>
+         body{
+            Margin:0;
+            background-color:#616091;
+            box-shadow;2px 5px 5px rgba(0,0,0,0.7);
+            border:none;
+            border-radius:25px;
+         }
+         #container{
+             margin:24px;
+             padding:24px;
+             color:white;
+             background-color:#04041c;
+             text-align;center;
+         }
+         #input{
+             color:white;
+             background-color:#04041c;
+             border:none;
+             border-bottom:1px solid #616091;
+             border-ledt:1px solid #616091;
+         }
+         #btn{
+              border:none;
+              border-radius:8px;
+              background-color:#b4b3d8;
+         }
+        </style>
+       </head>
+       <body>
+          <div>
+             <h1> TO DO LIST</h1>
+             </div>
+         <div id="container">
+             <input type="input"placeholder="enter your text here..">
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <button id="btn">ADDTODO</button>
+             <ul class="ul" style="list-style-type:none;">
+             </ul>
+        </div>
+      </body>
+      <script type="text/javascript">
+      Let inputBx=document.querySelector('#inputBx');
+      Let list=document.querySelector('#list');
+ 
+      inputBx.addEventlistener("keyup",function(event){
+           if(event.key=="AddToDo"){
+              addItem(this.value)
+               This.value=""
+           }
+       })
+       Let addItem=(inputBx) =>{
+           Let listItem=document.createElement("li");
+           listItem.innerHTML='$(inputBx)<i><i>';
+           
+                 List.appendchild(listItem);
+        }
+         </script>
+      </html>
+      </html>
